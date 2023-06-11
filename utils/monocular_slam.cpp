@@ -369,6 +369,7 @@ int main(int argc,char **argv){
                     vcap >> in_image;
             }
         }
+        TrajectoryFile.close();
 
         //release the video output if required
         if(videoout.isOpened()) videoout.release();
@@ -398,6 +399,7 @@ int main(int argc,char **argv){
                 <<quat.at<float>(3, 0)<<endl;
             }
         }
+        MarkersFile.close();
 
 
     }
