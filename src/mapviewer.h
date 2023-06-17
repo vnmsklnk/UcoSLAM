@@ -582,6 +582,7 @@ public:
         curKF=curKeyFrame;
         draw();
         int key,leaveNow=false;
+        canLeave=true;
         do{
             cv::imshow(_wname,_imshow);
             if (canLeave)waitKeyTime=2;
